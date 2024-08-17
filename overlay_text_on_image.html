@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Overlay Text on Image</title>
+<style>
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+    margin: auto;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: top;
+    justify-content: top;
+    color: white;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<img src="india.jfif" alt="India Map" class="image">
+<div class="overlay">Hello India!</div>
+</div>
+</body>
+</html>
