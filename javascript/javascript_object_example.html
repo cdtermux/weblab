@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var person = {
+        firstName: "Hare",
+        lastName: "Krishna",
+        age: 111,
+        greet: function () {
+            return "Hello, I'm " + this.firstName + " " + this.lastName + ".";
+        }
+    };
+    var outputElement = document.getElementById("output");
+    outputElement.innerHTML = "<p>First Name: " + person.firstName + "</p>" +
+                              "<p>Last Name: " + person.lastName + "</p>" +
+                              "<p>Age: " + person.age + "</p>" +
+                              "<p>Greeting: " + person.greet() + "</p>";
+});
+</script>
+<div id="output"></div>
+</body>
+</html>
